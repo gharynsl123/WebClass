@@ -9,7 +9,7 @@ html.light{
     --primary:#08c;
 }
 html.dark{
-    --primary:#090909;
+    --primary:#2d2d2d;
 }
 .ion-icon{
     color: #ffb109;
