@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+:root{
+    --primary: #08c;
+    --secondary:#fff;
+}
+
+html.light{
+    --primary:#08c;
+}
+html.dark{
+    --primary:#090909;
+}
+.ion-icon{
+    color: #ffb109;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+}
