@@ -4,7 +4,7 @@ let theme = localStorage.getItem('theme');
 setTheme(theme, icon);
 theme_switcher.addEventListener('click', () => {
     if(theme_switcher.getAttribute('name') == 'sunny-outline'){
-        setTheme('dark', 'moon-outline');3
+        setTheme('dark', 'moon-outline');
         theme_switcher.setAttribute('name', 'moon-outline');
     }else{
         setTheme('light', 'sunny-outline');

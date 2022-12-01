@@ -3,6 +3,7 @@
 :root{
     --primary: #08c;
     --secondary:#fff;
+    --white:#fff;
 }
 
 html.light{
@@ -24,4 +25,22 @@ html.dark{
     width: 100vw;
     height: 100vh;
     background: var(--primary);
+}
+.img-welcome{
+    width: 500px;
+}
+.btn-down{
+    color: var(--white);
+}
+.button-down{
+    animation: bounce .4s infinite alternate;
+    margin-top: 100px;
+}
+@keyframes bounce {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(20px);
+    }
 }
