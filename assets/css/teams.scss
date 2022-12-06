@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 80vh;
+    background: url(/assets/images/mas.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+
+    .blur-blue {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 32, 102, 0.70);
+
+        .p-title {
+            font-family: 'Staatliches', cursive;
+        }
+    }
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+
+    .rowm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 2rem;
+    }
+
+    .cardm {
+        flex: 1;
+        position: relative;
+
+        &:hover {
+            .front {
+                transform: translate(1.5rem, -3rem);
+            }
+        }
+
+        .back {
+            aspect-ratio: 1/1.2;
+            background-color: #22448C;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            display: flex;
+            align-items: flex-end;
+
+            div {
+                a {
+                    color: white;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .front {
+            aspect-ratio: 1/1.2;
+            background-color: aliceblue;
+            z-index: 1;
+            transition: 1s;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:hover {
+                .btn-see-port {
+                    display: block;
+                }
+            }
+
+            .btn-see-port {
+                padding: 10px 8px;
+                background-color: #0DCAF0;
+                border: none;
+                font-size: 20px;
+                display: none;
+                position: absolute;
+                bottom: -3.1rem;
+                right: 0;
+            }
+
+            p {
+                bottom: 1rem;
+                left: 15px;
+                position: absolute;
+                font-size: 1.9rem;
+                color: #EDC52F;
+                font-family: 'Staatliches', cursive;
+                text-shadow: 0 0 .5rem black;
+            }
+        }
+    }
+}
+
+// body {
+
+//         .front {
+//             aspect-ratio: 1/1.2;
+//             background-color: aliceblue;
+//             position: absolute;
+//             inset: 0;
+//             z-index: 1;
+//             transition: 1s;
+//             background-position: center;
+//             background-size: cover;
+//             background-repeat: no-repeat;
+
+//             &:hover {
+//                 .btn-see-port {
+//                     display: block;
+//                 }
+//             }
+
+//             .btn-see-port {
+//                 padding: 10px 8px;
+//                 background-color: #0DCAF0;
+//                 border: none;
+//                 font-size: 20px;
+//                 display: none;
+//                 position: absolute;
+//                 bottom: -3.1rem;
+//                 right: 0;
+//             }
+
+//             p{
+//                 bottom: 0px;
+//                 left: 20px;
+//                 position: absolute; 
+//                 font-size: 1.9rem;
+//                 color: #EDC52F;
+//                 font-family: 'Staatliches', cursive;
+//                 text-shadow: 0 0 .5rem black;
+//             }
+
+//         }
+
+//     }
+
+// }
+
+
+
+// .card>* {
+//     aspect-ratio: 1/1.5;
+//     width: 300px;
+//     position: absolute;
+// }
+
+// .card:hover .front {
+//     translate: -4rem, 4rem;
+// }
+
+// .front {
+//     z-index: 1;
+// }
+
+// .back {
+//     z-index: 0;
+// }
